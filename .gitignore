@@ -13,10 +13,14 @@
 /.next/
 /out/
 
+# edgedb
+dbschema/edgeql-js
+
 # production
 /build
 
 # misc
+.env
 .DS_Store
 *.pem
 

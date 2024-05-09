@@ -11,6 +11,7 @@
     "url": "https://github.com/doinel1a/next-ts-shadcn-ui"
   },
   "scripts": {
+    "prebuild": "npx @edgedb/generate edgeql-js",
     "postinstall": "husky & playwright install",
     "dev": "next dev",
     "build": "next build",
@@ -22,10 +23,12 @@
     "test:ui": "playwright test --ui"
   },
   "dependencies": {
+    "@auth/edgedb-adapter": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "edgedb": "^1.5.5",
     "lucide-react": "^0.368.0",
     "next": "14.2.1",
     "next-auth": "5.0.0-beta.17",
@@ -38,6 +41,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "@edgedb/generate": "^0.5.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@playwright/test": "^1.43.1",
     "@total-typescript/ts-reset": "^0.5.1",
