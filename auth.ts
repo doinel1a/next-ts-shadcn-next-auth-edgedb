@@ -11,4 +11,3 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: EdgeDBAdapter(client),
   providers: [Github]
 });
-
