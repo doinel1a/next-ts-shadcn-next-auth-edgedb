@@ -16,8 +16,8 @@ export const env = createEnv({
     AUTH_SECRET: process.env.NODE_ENV === 'production' ? z.string() : z.string().optional(),
     AUTH_GITHUB_ID: z.string(),
     AUTH_GITHUB_SECRET: z.string(),
-    EDGEDB_INSTANCE: process.env.NODE_ENV === 'development' ? z.string().optional() : z.string(),
-    EDGEDB_SECRET_KEY: process.env.NODE_ENV === 'development' ? z.string() : z.string().optional()
+    EDGEDB_INSTANCE: z.string(),
+    EDGEDB_SECRET_KEY: process.env.NODE_ENV === 'development' ? z.string().optional() : z.string()
   },
   runtimeEnv: {
     // Client
