@@ -7,3 +7,4 @@ module.exports = {
   //   `next lint --file ${filenames.map((f) => path.relative(process.cwd(), f)).join(' --file ')}`
   // ]
 };
+
